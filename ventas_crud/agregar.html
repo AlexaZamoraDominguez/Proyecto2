@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Agregar datos</title>
+</head>
+
+<body>
+	<a href="index.php">Inicio</a> | <a href="ver.php">Ver Productos</a> | <a href="cerrar.php">Cerrar Sesion</a>
+	<br/><br/>
+
+	<form name="form1" method="post" action="agregar.php">
+		<table border="0">
+			<tr>
+				<td>ID Venta</td>
+				<td><input type="text" name="id_venta"></td>
+			</tr>
+			<tr>
+				<td>Fecha</td>
+				<td><input type="date" name="fecha"></td>
+			</tr>
+			<tr>
+				<td>Hora</td>
+				<td><input type="time" name="hora"></td>
+			</tr>
+			<tr>
+				<td>Producto</td>
+				<td><input type="text" name="producto"></td>
+			</tr>
+			<tr>
+				<td>Precio</td>
+				<td><input type="text" name="precio"></td>
+			</tr>
+			<tr>
+				<td>Cantidad</td>
+				<td><input type="text" name="cantidad"></td>
+			</tr>
+			<tr>
+				<td>Total</td>
+				<td><input type="text" name="total"></td>
+			</tr>
+			<tr>
+				<td>Id Cajero</td>
+				<td><input type="text" name="id_cajero"></td>
+			</tr>
+			<tr>
+				<td>Id Cliente</td>
+				<td><input type="text" name="id_cliente"></td>
+			</tr>
+			<tr>
+				<td>Numero de factura</td>
+				<td><input type="text" name="no_factura"></td>
+			</tr>
+			<tr>
+				<td><input type="hidden" name="id" value="<?php echo $_GET['id']; ?>"></td>
+				<td><input type="submit" name="update" value="agregar"></td>
+			</tr>
+		</table>
+	</form>
+	
+	
+</body>
+</html>
